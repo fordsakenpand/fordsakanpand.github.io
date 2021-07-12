@@ -1,0 +1,13 @@
+body{
+    background-color: orange;
+}
+.logo{
+    height:40px;
+    width:60px;
+}
+h1{
+    padding-top:15px;
+}
+.espacio{
+    padding-top:5px;
+}

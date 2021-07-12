@@ -1,0 +1,22 @@
+body{
+    background-color:orange;
+}
+.logo{
+    height:40px;
+    width:60px;
+}
+.espacio{
+    padding-top: 50px;
+}
+.ajuste{
+    padding-top:30px;
+}
+.electro{
+    color: white;
+}
+.caja{
+    color: white;
+}
+.suspencion{
+    color: white;
+}
