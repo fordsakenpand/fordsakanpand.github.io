@@ -10,4 +10,6 @@ def inicio (request):
     datos={
         'usuario':nombre
     }
-    return render(request,'core/inicio.html',datos)
+    return render(request, 'core/inicio.html',datos)
+
+

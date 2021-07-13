@@ -11,5 +11,11 @@
     {% for ve in nombre %}
     <h1>{{ve.useradmin}}</h1>
     {% endfor %}
+    <form method="post" action="" id="formulario">
+        {% csrf_token %}
+        <div class="inicio">
+            {{ form.as_table}}
+        </div>
+    </form>
 </body>
 </html>
