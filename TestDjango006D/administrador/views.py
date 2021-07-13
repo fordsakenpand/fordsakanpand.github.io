@@ -8,8 +8,12 @@ def login (request):
 def inicio (request):
     nombre=Administrador.objects.all()
     datos={
-        'usuario':nombre
+        'usuario':nombre()
     }
+    if request.method== 'POST':
+        formulario = nombre(request.POST)
+        if formulario.is_valid:
+            formulario.save()
     return render(request, 'core/inicio.html',datos)
 
 
