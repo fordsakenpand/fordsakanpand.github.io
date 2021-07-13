@@ -45,7 +45,7 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <img class="logo" src="https://st.depositphotos.com/1006018/3132/v/600/depositphotos_31322065-stock-illustration-automotive-mechanic-car-repair-retro.jpg" alt="">
+          <img class="logo" src="{% static 'core/IMG/logo.jpg' %}" alt="">
           <a class="navbar-brand" href="#">Taller Mecánico Rayo Makween</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -101,28 +101,28 @@
       <!--Carta 1-->
       <div class="row">
         <div class="card m-4" style="width: 20rem;">
-          <img src="https://www.hibridosyelectricos.com/media/hibridos/images/2021/04/06/2021040617434547911.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/IMG/electro.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Especialista en electricidad</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, asperiores laboriosam eum incidunt consectetur, debitis cupiditate doloremque quibusdam fugiat nisi dolore facere distinctio accusantium quia, eligendi quas? In, corporis molestiae.</p>
+            <h5 class="card-title">{{titulo.electro}}</h5>
+            <p class="card-text">{{texto.0}}</p>
             <a href="./Electricidad.html" class="btn btn-primary">Mas informacion</a>
           </div>
         </div>
         <!--Carta 2-->
         <div class="card m-4" style="width: 20rem;">
-          <img src="https://i.pinimg.com/originals/b7/66/77/b7667735fdcfb47defd4ddb74ffc5a55.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/IMG/caja.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Especialista en caja de cambios</h5>
-            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolore neque quaerat ratione obcaecati illo deleniti unde harum! Neque sint, qui ducimus officiis pariatur commodi veritatis? Deserunt non aut suscipit.</p>
+            <h5 class="card-title">{{titulo.caja}}</h5>
+            <p class="card-text">{{texto.1}}</p>
             <a href="./Cambios.html" class="btn btn-primary">Mas informacion</a>
           </div>
         </div>  
         <!--Carta 3-->
         <div class="card m-4" style="width:20rem;">
-          <img src="https://fotos.perfil.com/2015/07/01/cropped/1200/900/center/principal.jpg" class="card-img-top" alt="...">
+          <img src="{% static 'core/IMG/suspen.png' %}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Especialista en suspencion</h5>
-            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit corrupti fuga adipisci sit voluptatum recusandae iste eos odio eligendi quia nobis explicabo vitae accusamus saepe, culpa sed magni quidem animi!</p>
+            <h5 class="card-title">{{titulo.suspen}}</h5>
+            <p class="card-text">{{texto.2}}</p>
             <a href="./Suspencion.html" class="btn btn-primary">Mas informacion</a>
           </div>  
         </div> 
@@ -130,12 +130,12 @@
   </div>
 
 
-     <div class="row"></div>
-     <div class="row"></div>
-     <div class="row"></div>
-     <div class="row"></div>
-     <div class="row"></div>
-     <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
+  <div class="row"></div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
