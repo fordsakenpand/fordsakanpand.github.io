@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="" id="FORMULARIO">
+    <form method="POST" action="" id="formulario">
         {% csrf_token %}
         <div class="form">
             {{form.as_table}}
         </div>
+        <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">        
+        <input type="reset" class="btn btn-primary" id="limpiar" value="limpiar">   
     </form>
     <div class="alert-alert-success" role="alert">
         {{mensaje}}

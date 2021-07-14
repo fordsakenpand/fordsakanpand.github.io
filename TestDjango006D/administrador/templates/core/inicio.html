@@ -7,15 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hola</h1>
-    {% for ve in nombre %}
-    <h1>{{ve.useradmin}}</h1>
-    {% endfor %}
-    <form method="post" action="" id="formulario">
-        {% csrf_token %}
-        <div class="inicio">
-            {{ form.as_table}}
-        </div>
-    </form>
+    <h1>Mecanicos</h1>  
+    <table>
+        <tr>
+            <td>Patente</td>
+            <td>Marca</td>
+            <td>Modelo</td>
+        </tr>
+        {% for ve in ListaVehiculos %}
+        <tr>
+            <td>{{ve.patente}}</td>
+            <td>{{ve.maraca}}</td>
+            <td>{{ve.modelo}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
